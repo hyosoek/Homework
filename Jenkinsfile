@@ -60,7 +60,7 @@ pipeline {
 
         stage("Docker Image Build - Actual Build") {
             steps {
-                sh "docker build -t tennfin1/springBoardsServer  ."
+                sh "docker build -t tennfin1/springboardsserver  ."
             }
         }
 
@@ -72,7 +72,7 @@ pipeline {
 
         stage('docker hub push'){
           steps{
-              sh 'docker push tennfin1/springboardsserver'
+              sh 'docker push tennfin1/springboardsserver:latest'
           }
         }
     }
