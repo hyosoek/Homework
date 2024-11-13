@@ -72,7 +72,7 @@ pipeline {
 
         stage('docker hub push'){
           steps{
-              sh 'docker push tennfin1/springBoardsServer'
+              sh 'docker push tennfin1/springboardsserver'
           }
         }
     }
